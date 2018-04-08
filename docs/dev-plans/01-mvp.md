@@ -28,6 +28,8 @@ For the MVP stage there should be several API endpoints (which maybe can be acce
 
 I don't know a lot about SPA and I think I should do a research about authentication in that apps. It's interesting, can I use plain old cookies for that?
 
+Suggestion about using [JWT](https://auth0.com/docs/security/store-tokens)
+
 ## Development organization
 
 GitHub has projects, I defenitely should give them a try.
