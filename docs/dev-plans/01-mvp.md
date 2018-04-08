@@ -10,7 +10,7 @@ _Look at [this beautiful site](https://www.kotlinresources.com/) with Kotlin lib
 
 Kotlin candidates for now:
 - https://www.kotlinresources.com/library/ktor/
-- https:/www.kotlinresources.com/library/vertx-lang-kotlin/
+- https://www.kotlinresources.com/library/vertx-lang-kotlin/
 - https://www.kotlinresources.com/library/hexagon/
 - https://www.kotlinresources.com/library/kara/
 
