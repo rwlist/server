@@ -26,9 +26,25 @@ For the MVP stage there should be several API endpoints (which maybe can be acce
 
 **TODO.** Use Swagger to get SWAG
 
+## Auth
+
 I don't know a lot about SPA and I think I should do a research about authentication in that apps. It's interesting, can I use plain old cookies for that?
 
 Suggestion about using [JWT](https://auth0.com/docs/security/store-tokens)
+
+## `fs` module
+
+Create a directory for every user and store all files in that directory.
+
+It should support the following functions:
+
+- `listDirectory(path: String)`
+- `createDirectory(path: String)`
+- `downloadFile(path: String)`
+- `uploadFile(path: String, stream: ByteStream)`
+- `deleteOne(path: String)`
+- `recursiveDelete(path: String)` (ask for confirmation as an option)
+
 
 ## Development organization
 

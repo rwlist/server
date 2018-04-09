@@ -18,7 +18,7 @@ That's one of the reason for using node.js and npm, but I hope I can do it in Ko
 
 My first idea was that `fs` and `db` objects should share the same directory tree, but I realized that it can be painful to manage and keep in sync, so divinding `fs` and `db` should be ok.
 
-### _Scheduler_ module
+### `scheduler` module
 
 Allow schedule script executions.
 
