@@ -20,7 +20,7 @@ It's the description of MVP, so it's possible to try several options for now.
 
 ## Basics
 
-I see it all as the SPA app using server API's, so the frontend framework also need to be chosen, but I feel like it's far less important in MVP stage.
+I see it all as the SPA using server API's, so the front-end framework also needs to be chosen, but I feel like it's far less important during the MVP stage.
 
 For the MVP stage there should be several API endpoints (which maybe can be accessed via Swagger)
 
@@ -28,7 +28,7 @@ For the MVP stage there should be several API endpoints (which maybe can be acce
 
 ## Auth
 
-I don't know a lot about SPA and I think I should do a research about authentication in that apps. It's interesting, can I use plain old cookies for that?
+I don't know a lot about SPA and I think I should do a research about authentication in those apps. It's interesting, can I use plain old cookies for that?
 
 Suggestion about using [JWT](https://auth0.com/docs/security/store-tokens)
 
@@ -48,6 +48,6 @@ It should support the following functions:
 
 ## Development organization
 
-GitHub has projects, I defenitely should give them a try.
+GitHub has projects, I definitely should give them a try.
 
-Markdown files are good for now, are'nt they?
+Markdown files are good for now, aren't they?
