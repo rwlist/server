@@ -22,6 +22,8 @@ It's the description of MVP, so it's possible to try several options for now.
 
 I see it all as the SPA using server API's, so the front-end framework also needs to be chosen, but I feel like it's far less important during the MVP stage.
 
+I'll try to experiment with React.js firstly.
+
 For the MVP stage there should be several API endpoints (which maybe can be accessed via Swagger)
 
 **TODO.** Use Swagger to get SWAG
@@ -40,12 +42,11 @@ It should support the following functions:
 
 - `listDirectory(path: String)`
 - `createDirectory(path: String)`
-- `downloadFile(path: String)`
+- `downloadFile(path: String): ByteStream`
 - `uploadFile(path: String, stream: ByteStream)`
-- `deleteOne(path: String)`
-- `recursiveDelete(path: String)` (ask for confirmation as an option)
+- `delete(path: String, recursive: Boolean, force: Boolean)`
 
-**TODO.** Add more functions, `move` at least.
+**TODO.** Add more functions, but they can wait for next stage. For example `move` and `copy`.
 
 `fs` is just a module that allows user to store files in separate directory directly on disk. So `fs` module provides basic functions as every fs do.
 
