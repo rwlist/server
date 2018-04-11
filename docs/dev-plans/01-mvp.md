@@ -45,6 +45,21 @@ It should support the following functions:
 - `deleteOne(path: String)`
 - `recursiveDelete(path: String)` (ask for confirmation as an option)
 
+**TODO.** Add more functions, `move` at least.
+
+`fs` is just a module that allows user to store files in separate directory directly on disk. So `fs` module provides basic functions as every fs do.
+
+Check note about metadata on [ideas page](./ideas.md). Meta is useful and that's what I want to, but it shouldn't be implemented at this stage.
+
+Basically, fs should be used only for blobs.
+
+## `db` module
+
+`db` is very similar to `fs`, but stores BSON documents in MongoDB.
+
+It's also allows advanced structures like virtual directories, read more on [ideas page.](./ideas.md)
+
+Add/delete directory, add/delete/edit document should be enough for the MVP.
 
 ## Development organization
 

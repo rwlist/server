@@ -36,6 +36,70 @@ Create admin account for adjusting settings, watching status.
 
 Separate settings page for every module.
 
+### `fs` module
+
+I would like to have metadata assigned to every file stored in fs.
+
+But that looks like it requires more complex realization of fs, not just like storing files and just forwarding fs operations to the server system fs implementation.
+
+### `db` module
+
+#### Objects definition
+
+BSON documents can include arbitary fields of arbitary types.
+
+That is useful in a lot of cases, but it's possible to add strongly typed objects.
+
+So the idea is to specify objects description and create types.
+
+For example, object describing `Box`:
+
+```
+{
+    _id: ObjectId,
+    h: Double,
+    w: Double,
+    l: Double,
+    objects: Long,
+    created: Timestamp,
+    ownerName: String
+}
+```
+
+Types of fields are similar to [BSON](https://docs.mongodb.com/manual/reference/bson-types/).
+
+#### Virtual directories
+
+Imagine a simple collection with objects.
+
+That can also include indexes and other types of useful things.
+
+So the idea is to create virtual directory that is assigned to that collection.
+
+For obvious reasons, that directory can't include subdirectories.
+
+For example:
+
+```
+/
+    dir1/
+            boxes/      :that is a virtual directory, collection of boxes
+                box1
+                box2
+                box3
+                box4
+```
+
+So, here is virtual directory `boxes`, that is a collection of 4 boxes.
+
+It's also possible to execute standard MongoDB queries in that directory.
+
+Also, there can be many other examples of virtual directories.
+
+They can be similar to collections, can be not.
+
+You can imagine a collections which deny deleting documents from them.
+
 ## Can wait longer
 
 ### On the fly encryption
