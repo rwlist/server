@@ -74,7 +74,7 @@ Imagine a simple collection of objects.
 
 That can also include indexes and other types of useful things.
 
-So the idea is to create a virtual directory that is assigned to that collection.
+So the idea is to create a virtual directory which is assigned to that collection.
 
 For obvious reasons, that directory can't include subdirectories.
 
@@ -90,15 +90,15 @@ For example:
                 box4
 ```
 
-So, here is the virtual directory `boxes`, which is a collection of 4 boxes.
+So, this is the virtual directory `boxes`, which is a collection of 4 boxes.
 
 It's also possible to execute standard MongoDB queries in that directory.
 
 Also, there can be many other examples of virtual directories.
 
-They can be either similar or not.
+They can be either similar to collections or not.
 
-You can imagine a collections which disallow deleting documents from them.
+You can imagine collections which disallow deleting documents from them.
 
 ## Can wait longer
 
