@@ -40,7 +40,7 @@ Separate settings page for every module.
 
 I would like to have metadata assigned to every file stored in fs.
 
-But that looks like it requires more complex realization of fs, not just like storing files and just forwarding fs operations to the server system fs implementation.
+But that looks like it requires more complex implementation of fs, not just like storing files and just forwarding fs operations to the server system fs implementation.
 
 ### `db` module
 
@@ -52,7 +52,7 @@ That is useful in a lot of cases, but it's possible to add strongly typed object
 
 So the idea is to specify objects description and create types.
 
-For example, object describing `Box`:
+For example, an object describing `Box`:
 
 ```
 {
@@ -70,11 +70,11 @@ Types of fields are similar to [BSON](https://docs.mongodb.com/manual/reference/
 
 #### Virtual directories
 
-Imagine a simple collection with objects.
+Imagine a simple collection of objects.
 
 That can also include indexes and other types of useful things.
 
-So the idea is to create virtual directory that is assigned to that collection.
+So the idea is to create a virtual directory that is assigned to that collection.
 
 For obvious reasons, that directory can't include subdirectories.
 
@@ -83,22 +83,22 @@ For example:
 ```
 /
     dir1/
-            boxes/      :that is a virtual directory, collection of boxes
+            boxes/      * This is a virtual directory, collection of boxes
                 box1
                 box2
                 box3
                 box4
 ```
 
-So, here is virtual directory `boxes`, that is a collection of 4 boxes.
+So, here is the virtual directory `boxes`, which is a collection of 4 boxes.
 
 It's also possible to execute standard MongoDB queries in that directory.
 
 Also, there can be many other examples of virtual directories.
 
-They can be similar to collections, can be not.
+They can be either similar or not.
 
-You can imagine a collections which deny deleting documents from them.
+You can imagine a collections which disallow deleting documents from them.
 
 ## Can wait longer
 

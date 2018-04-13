@@ -46,11 +46,11 @@ It should support the following functions:
 - `uploadFile(path: String, stream: ByteStream)`
 - `delete(path: String, recursive: Boolean, force: Boolean)`
 
-**TODO.** Add more functions, but they can wait for next stage. For example `move` and `copy`.
+**TODO.** Add more functions, but they can wait until the next stage. For example `move` and `copy`.
 
-`fs` is just a module that allows user to store files in separate directory directly on disk. So `fs` module provides basic functions as every fs do.
+`fs` is just a module that allows user to store files in separate directory directly on the disk. So `fs` module provides basic functions as every fs does.
 
-Check note about metadata on [ideas page](./ideas.md). Meta is useful and that's what I want to, but it shouldn't be implemented at this stage.
+Check note about metadata on [ideas page](./ideas.md). Meta is useful and that's what I definitely want to have in rwlist, but it shouldn't be implemented at this stage.
 
 Basically, fs should be used only for blobs.
 
@@ -58,7 +58,7 @@ Basically, fs should be used only for blobs.
 
 `db` is very similar to `fs`, but stores BSON documents in MongoDB.
 
-It's also allows advanced structures like virtual directories, read more on [ideas page.](./ideas.md)
+It also allows advanced structures like virtual directories, read more on [ideas page.](./ideas.md)
 
 Add/delete directory, add/delete/edit document should be enough for the MVP.
 
