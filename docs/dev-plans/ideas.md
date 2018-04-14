@@ -6,9 +6,9 @@
 
 ### Divide functionality into separate modules
 
-For example, create two main modules `fs` and `db`.
+For example, create two primary modules `fs` and `db`.
 
-One semi-main module `fs-meta`.
+One secondary module `fs-meta`.
 
 And then there will be modules that depend on `fs` or `db` module, or other user modules.
 
@@ -20,7 +20,7 @@ My first idea was that `fs` and `db` objects should share the same directory tre
 
 ### `scheduler` module
 
-Allow scheduled script executions.
+Allows scheduled script executions.
 
 For example, call scripts at path `/schedule/10min` every 10 minutes, at path `/schedule/1hour` every 1 hour etc.
 
