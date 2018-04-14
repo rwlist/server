@@ -48,7 +48,7 @@ It should support the following functions:
 
 **TODO.** Add more functions, but they can wait until the next stage. For example `move` and `copy`.
 
-`fs` is just a module that allows user to store files in separate directory directly on the disk. So `fs` module provides basic functions as every fs does.
+`fs` is just a module that allows user to store files in a separate directory directly on the disk. So `fs` module provides basic functions as every fs does.
 
 Check note about metadata on [ideas page](./ideas.md). Meta is useful and that's what I definitely want to have in rwlist, but it shouldn't be implemented at this stage.
 
