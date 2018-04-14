@@ -22,6 +22,8 @@ It's the description of MVP, so it's possible to try several options for now.
 
 I see it all as the SPA using server API's, so the front-end framework also needs to be chosen, but I feel like it's far less important during the MVP stage.
 
+I'll try to experiment with React.js firstly.
+
 For the MVP stage there should be several API endpoints (which maybe can be accessed via Swagger)
 
 **TODO.** Use Swagger to get SWAG
@@ -40,11 +42,25 @@ It should support the following functions:
 
 - `listDirectory(path: String)`
 - `createDirectory(path: String)`
-- `downloadFile(path: String)`
+- `downloadFile(path: String): ByteStream`
 - `uploadFile(path: String, stream: ByteStream)`
-- `deleteOne(path: String)`
-- `recursiveDelete(path: String)` (ask for confirmation as an option)
+- `delete(path: String, recursive: Boolean, force: Boolean)`
 
+**TODO.** Add more functions, but they can wait until the next stage. For example `move` and `copy`.
+
+`fs` is just a module that allows user to store files in a separate directory directly on the disk. So `fs` module provides basic functions as every fs does.
+
+Check note about metadata on [ideas page](./ideas.md). Meta is useful and that's what I definitely want to have in rwlist, but it shouldn't be implemented at this stage.
+
+Basically, fs should be used only for blobs.
+
+## `db` module
+
+`db` is very similar to `fs`, but stores BSON documents in MongoDB.
+
+It also allows advanced structures like virtual directories, read more on [ideas page.](./ideas.md)
+
+Add/delete directory, add/delete/edit document should be enough for the MVP.
 
 ## Development organization
 
