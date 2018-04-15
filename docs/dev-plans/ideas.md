@@ -102,13 +102,13 @@ You can imagine collections which disallow deleting documents from them.
 
 ### Scrobbling
 
-Add support for different scrobbling models.
+Add support of different scrobbling models.
 
 From visited pages up to visited places.
 
 ### Visual
 
-Implement beatiful visual representations of things on the client sides.
+Implement beatiful visual representations of things on the client side.
 
 Graphs, diagrams and so on.
 
