@@ -13,6 +13,7 @@ Kotlin candidates for now:
 - https://www.kotlinresources.com/library/vertx-lang-kotlin/
 - https://www.kotlinresources.com/library/hexagon/
 - https://www.kotlinresources.com/library/kara/
+- http://sparkjava.com/
 
 _Btw, I liked Play Framework very much recently, but it is written in Scala, so I'm afraid it can't be used here._
 
