@@ -100,6 +100,47 @@ They can be either similar to collections or not.
 
 You can imagine collections which disallow deleting documents from them.
 
+#### Note about virtual directories
+
+They are provided with modules. Module includes virtual directories definition and required logic.
+
+Logic can be provided inside class that overrides fs functions.
+
+For example:
+
+```
+class DbCollection {
+    constructor(...) {}
+
+    createDirectory(args) {
+        throw NotAllowed()
+    }
+
+    list() {
+        return this.collection.findAll()
+            .map(...)
+    }
+
+    remove(...) {}
+
+    // and so on
+}
+```
+
+Nested structures are under consideration.
+
+### Scrobbling
+
+Add support for different scrobbling models.
+
+From visited pages up to visited places.
+
+### Visual
+
+Implement beatiful visual representations of things on the client sides.
+
+Graphs, diagrams and so on.
+
 ## Can wait longer
 
 ### On the fly encryption
