@@ -100,6 +100,18 @@ They can be either similar to collections or not.
 
 You can imagine collections which disallow deleting documents from them.
 
+### Scrobbling
+
+Add support of different scrobbling models.
+
+From visited pages up to visited places.
+
+### Visual
+
+Implement beatiful visual representations of things on the client side.
+
+Graphs, diagrams and so on.
+
 ## Can wait longer
 
 ### On the fly encryption
